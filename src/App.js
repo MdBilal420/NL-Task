@@ -1,15 +1,23 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {ApiContextProvider} from "./ApiContext";
 import News from './components/News';
+// import SearchArticle from './components/SearchArticle';
+import Nav from './components/layout/Nav';
 
-function App() {
+class App extends Component {
+  render(){
   return (
     <ApiContextProvider>
-      <News />
+      <Nav />
+
+
+
+        <News />
     </ApiContextProvider>
       
     
   );
+}
 }
 
 export default App;

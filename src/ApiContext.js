@@ -11,7 +11,10 @@ export const ApiContextProvider = (props) => {
         axios.get(
             `https://nl-static-site-assets.s3.ap-south-1.amazonaws.com/reports.json`
         )
-        .then((response) => setData(response.data))
+        .then((response) => {
+            console.log(response.data);
+            setData(response.data)
+        })
         .catch((error) => console.log(error));
     }, []);
 
@@ -21,4 +24,3 @@ export const ApiContextProvider = (props) => {
         </ApiContext.Provider>
     );
 }
-
