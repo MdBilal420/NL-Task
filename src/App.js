@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import {ApiContextProvider} from "./ApiContext";
 import News from './components/News';
+import Search from './components/Search';
+
 // import SearchArticle from './components/SearchArticle';
 import Nav from './components/layout/Nav';
 
@@ -9,7 +11,7 @@ class App extends Component {
   return (
     <ApiContextProvider>
       <Nav />
-
+      <Search />
 
 
         <News />

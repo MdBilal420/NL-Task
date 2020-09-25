@@ -12,7 +12,7 @@ export const ApiContextProvider = (props) => {
             `https://nl-static-site-assets.s3.ap-south-1.amazonaws.com/reports.json`
         )
         .then((response) => {
-            console.log(response.data);
+            //console.log(response.data);
             setData(response.data)
         })
         .catch((error) => console.log(error));

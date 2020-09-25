@@ -12,11 +12,13 @@ function News(props) {
 
     return (
         <React.Fragment>
+        <div className='container'>
         <h2 className='text-center mb-4'>All Stories</h2>
         <div className='row'>     
                  {data ? data.items.map(news => (
                  <NewsArticle data={news} key={news.id} />)) 
                  : 'Loading'}
+        </div>
         </div>
         </React.Fragment>
         
